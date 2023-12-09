@@ -1,5 +1,15 @@
-# Трекер полезных привычек
-Данное приложение реализует REST API и предназначено для отслеживания Ваших полезных привычек и поможет Вам стать лучшей версией себя!
+# AtomicHabits: Трекер полезных привычек
+## Исползуемые технологии
+  * python
+  * django
+  * django rest framework
+  * drf-yasg
+  * postgresql
+  * redis
+  * celery
+  * django-celery-beat
+  * cors
+  * simple jwt
 
 ## Сущности системы
   ### Привычка
@@ -50,7 +60,7 @@ CSRF_TRUSTED_ORIGINS = [
   
   В терминале необходимо ввести команды:
   ```
-  git clone https://github.com/sudarev91/AtomicHabits
+  git clone https://github.com/Danny-progg/coursework_7
   ```
   ```
   cd AtomicHabits/
@@ -64,4 +74,3 @@ CSRF_TRUSTED_ORIGINS = [
   python managage.py runserver
   ```
 - Откройте браузер и перейдите по адресу http://127.0.0.1:8000 для доступа к приложению.
-
