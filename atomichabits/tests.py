@@ -78,7 +78,7 @@ class HabitTestCase(APITestCase):
     def test_related_habit_validation(self):
         self.habit = Habit.objects.create(place="uuu", action="uuu", is_pleasant=False)
 
-        data = {"place": "home", "action": "do something", "related_habit": 2}
+        data = {"place": "home", "action": "do something", "related_habit": "2"}
 
         response = self.client.post(reverse("atomichabits:habit_create"), data=data)
 
@@ -94,7 +94,7 @@ class HabitTestCase(APITestCase):
             "place": "test_rel_habit_and_award_validation",
             "action": "do something",
             "award": "eat something",
-            "related_habit": 1,
+            "related_habit": "1"
         }
 
         response = self.client.post(reverse("atomichabits:habit_create"), data=data)
