@@ -65,12 +65,13 @@ CSRF_TRUSTED_ORIGINS = [
   ```
   cd AtomicHabits/
   ```
+ 
 - Создать файл ``.env``, который необходимо заполнить данными из файла ``env.sample``
-- Установить зависимости из ``requirements.txt``
-- Применить миграции командой ``python manage.py migrate``
-- Запустить проект:
-
+- Далее необходимо выполнить следующие команды в терминале (важно иметь открытым программу Docker Dekstop):
   ```
-  python managage.py runserver
+  docker-compose build
+  ```
+  ```
+  docker-compose up
   ```
 - Откройте браузер и перейдите по адресу http://127.0.0.1:8000 для доступа к приложению.
